@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>粒子生成器</title>
+	<script type="text/javascript" src="./gen.js"></script>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div class="preview-ct">
+	<div class="prefview">
+	</div>
+	<div class="opations">		
+	</div>
+</div>
+<div class="paramters">
+	
+</div>
+<style class="gen">
+.point {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    animation: particle 1s both;
+    left: 10%;
+}
+
+@keyframes particle {
+	0% {
+		bottom: 0%;
+		opacity: 0.5;
+	} 
+	100% {
+		bottom: 100%;
+		opacity: 0;
+	}
+}
+</style>
+<script type="text/javascript">
+	particle(100);
+</script>
+</body>
+</html>
